@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7007265751141429880
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1ef669eb514f24c9c8b1394c5626a5, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 0
+  isEnable:
+    m_OverrideState: 0
+    m_Value: 1
+  iterations:
+    m_OverrideState: 0
+    m_Value: 2
+  blurSpread:
+    m_OverrideState: 0
+    m_Value: 2.04
+  downSample:
+    m_OverrideState: 0
+    m_Value: 2
+  luminanceThreshold:
+    m_OverrideState: 0
+    m_Value: 0.28
+--- !u!114 &-4228647260734949237
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f4d9518540dc14695fd8e2376ed7ae, type: 3}
+  m_Name: MyVolumeComponentClass
+  m_EditorClassIdentifier: 
+  active: 1
+  isRender:
+    m_OverrideState: 0
+    m_Value: 0
+  Brightness:
+    m_OverrideState: 0
+    m_Value: 1
+  Saturation:
+    m_OverrideState: 0
+    m_Value: 1
+  Contrast:
+    m_OverrideState: 0
+    m_Value: 1
+--- !u!114 &-3986002391218723064
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fdef7fe589a6a4cbf4db1c3d7fdbca, type: 3}
+  m_Name: NoiseFog
+  m_EditorClassIdentifier: 
+  active: 1
+  isEnable:
+    m_OverrideState: 1
+    m_Value: 1
+  fogDensity:
+    m_OverrideState: 1
+    m_Value: 0.94
+  fogStart:
+    m_OverrideState: 1
+    m_Value: 0
+  fogEnd:
+    m_OverrideState: 1
+    m_Value: 2
+  fogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.2763439, g: 0.37376118, b: 0.509434, a: 1}
+  fogXSpeed:
+    m_OverrideState: 1
+    m_Value: 0
+  fogYSpeed:
+    m_OverrideState: 1
+    m_Value: 0.55
+  noiseAmount:
+    m_OverrideState: 1
+    m_Value: 0.7
+--- !u!114 &-3024379564322444492
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CustomVolumeComponentClass
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::CustomVolumeComponentClass
+  active: 1
+  <displayName>k__BackingField: 
+  isRender:
+    m_OverrideState: 1
+    m_Value: 1
+  Brightness:
+    m_OverrideState: 1
+    m_Value: 1
+  Saturation:
+    m_OverrideState: 1
+    m_Value: 1
+  Contrast:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &-646805598438761309
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32e9738b4be42f4faba03ffad4987d4, type: 3}
+  m_Name: EdgeDetectionWithNormalAndDepth
+  m_EditorClassIdentifier: 
+  active: 0
+  isEnable:
+    m_OverrideState: 0
+    m_Value: 0
+  edgeColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  backgroundColor:
+    m_OverrideState: 0
+    m_Value: {r: 0.21605524, g: 0.5754717, b: 0.12215203, a: 1}
+  edgeOnly:
+    m_OverrideState: 0
+    m_Value: 1
+  sampleDistance:
+    m_OverrideState: 0
+    m_Value: 1.38
+  sensitivityDepth:
+    m_OverrideState: 0
+    m_Value: 1.87
+  sensitivityNormal:
+    m_OverrideState: 0
+    m_Value: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile 1
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: -7007265751141429880}
+  - {fileID: 3668112710432657485}
+  - {fileID: 1609384302737016862}
+  - {fileID: 6689603206441708805}
+  - {fileID: 3725469011767282903}
+  - {fileID: -646805598438761309}
+  - {fileID: -3986002391218723064}
+--- !u!114 &1609384302737016862
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d3648bb3e90ac4ea36680dee043454, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 0
+  isEnable:
+    m_OverrideState: 1
+    m_Value: 0
+  blurAmount:
+    m_OverrideState: 1
+    m_Value: 0.809
+--- !u!114 &3668112710432657485
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b7e44f85e7b304884fb3a328c3f2e4, type: 3}
+  m_Name: GaussinBlur
+  m_EditorClassIdentifier: 
+  active: 0
+  blurSpread:
+    m_OverrideState: 0
+    m_Value: 1.23
+  iterations:
+    m_OverrideState: 0
+    m_Value: 0
+  downSaling:
+    m_OverrideState: 0
+    m_Value: 2.18
+--- !u!114 &3725469011767282903
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f88d75b5fadb419b34f9f09e1761e, type: 3}
+  m_Name: HeightFog
+  m_EditorClassIdentifier: 
+  active: 0
+  isEnable:
+    m_OverrideState: 1
+    m_Value: 1
+  fogDensity:
+    m_OverrideState: 1
+    m_Value: 0.71
+  fogStart:
+    m_OverrideState: 1
+    m_Value: 0.27
+  fogEnd:
+    m_OverrideState: 1
+    m_Value: 5.61
+  fogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.32453722, g: 0.3826162, b: 0.4811321, a: 1}
+--- !u!114 &6689603206441708805
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7769a67b3799a644b1e705664e7c502, type: 3}
+  m_Name: MotionBlurWithDepthTexture
+  m_EditorClassIdentifier: 
+  active: 0
+  isEnable:
+    m_OverrideState: 1
+    m_Value: 1
+  blurSize:
+    m_OverrideState: 1
+    m_Value: 0.331
+  drawCount:
+    m_OverrideState: 1
+    m_Value: 3
+  speedTime:
+    m_OverrideState: 1
+    m_Value: 2.34
